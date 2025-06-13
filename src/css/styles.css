@@ -2,6 +2,36 @@ body{
     background-color: antiquewhite;
 }
 
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.bloque-logo{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.textologo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.logo img{
+    width: 100px;
+    align-items: center;
+    height: auto;
+    display: block;
+    
+}
+.tel,
+.correo{
+    font-size: 10px;
+}
 .menu-toggle{
  
 
