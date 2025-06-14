@@ -20,17 +20,17 @@ document.addEventListener('DOMContentLoaded', function () {
   // Abrir menú
   botonAbrir.addEventListener('click', function () {
     menu.classList.add('activo');
-    botonCerrar.style.display = 'inline-block';
-    botonAbrir.style.display = 'none';
+    botonCerrar.classList.remove('oculto');
+    botonAbrir.classList.add('oculto');
   });
 
   // Cerrar menú
   botonCerrar.addEventListener('click', function () {
     menu.classList.remove('activo');
-    botonCerrar.style.display = 'none';
-    botonAbrir.style.display = 'inline-block';
+    botonCerrar.classList.add('oculto');
+    botonAbrir.classList.remove('oculto');
   });
 
   // Ocultar el botón de cerrar al inicio
-  botonCerrar.style.display = 'none';
+   botonCerrar.classList.add('oculto')
 });

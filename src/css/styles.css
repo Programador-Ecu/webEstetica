@@ -21,6 +21,12 @@ body{
     gap: 5px;
 }
 
+.oculto {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
 .logo img{
     width: 100px;
     align-items: center;
@@ -31,10 +37,6 @@ body{
 .tel,
 .correo{
     font-size: 10px;
-}
-.menu-toggle{
- 
-
 }
 
 .menu{
@@ -73,11 +75,19 @@ body{
    
 }
 .cerrar-menu{
-    position: fixed;
-    display:none;
-    position: absolute;
-    z-index: 9999; 
-    right: 0;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  z-index: 9999;
+  cursor: pointer;
+  color: red;
+}
+.menu-toggle,
+.cerrar-menu {
+  transition: opacity 0.3s ease;
 }
 .submenu{
     display: none;
