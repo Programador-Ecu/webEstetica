@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   toggles.forEach(toggle => {
     toggle.addEventListener('click', function (e) {
       e.preventDefault();
+      console.log('Desplegable clicado'); // 👈 Aquí se muestra en consola cuando haces clic
       const submenu = this.querySelector('.submenu');
       submenu.classList.toggle('activo');
     });
