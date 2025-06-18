@@ -114,7 +114,7 @@ body{
 /*Menu responsive en escritorio*/
 
 
-@media (min-width:1100px) 
+@media (min-width:1400px) 
 {
      .header-escritorio{
       display: grid;
@@ -202,4 +202,88 @@ body{
     }
 
  
+}
+@media(min-width: 934px) and (max-width: 1399px){
+    .header-escritorio{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(2,1fr);
+      column-gap: 5px;
+    }
+    
+    .item1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: red;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    } 
+    .header-top{
+        grid-column: 3/5;
+        grid-row: 1/2 ;
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header-top-escritorio{
+        background-color: blueviolet;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        grid-column: 2/5;
+        grid-row: 1/2 ;
+        display: flex;
+    }
+    .item3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background-color: yellow;
+    }
+     .menu-escritorio {
+        grid-column: 2/5;
+        grid-row: 2/3;
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        padding: 10px;
+  }
+    .header-class{
+        display: none !important;
+    }
+    .desplegable-escritorio > .item-menu {
+    cursor: pointer;
+  }
+.desplegable-escritorio:hover .submenu-escritorio {
+    display: flex;
+  }
+
+     .submenu-escritorio{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 10000;
+        min-width: 200px;
+     }
+     .submenu.activo{
+        display: flex;
+        flex-direction: column;
+     }
+     .desplegable {
+         position: relative;
+         background-color: azure;
+         cursor: pointer;
+     }
 }
